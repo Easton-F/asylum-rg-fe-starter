@@ -45,16 +45,24 @@ function RenderLandingPage(props) {
           <h4>Search Grant Rates Over Time</h4>
         </div>
       </div>
-      <div className="view-more-data-btn-container">
+      <div className="data-btn-container">
         <Button
+          className="view-btn"
           type="default"
           style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
           onClick={() => history.push('/graphs')}
         >
           View the Data
         </Button>
+        <Button
+          className="download-btn"
+          type="default"
+          style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+          // onClick={() => history.push('/graphs')}
+        >
+          Download the Data
+        </Button>
       </div>
-
       <div className="middle-section">
         <div className="hrf-img-container">
           <img src={HrfPhoto} alt="Human Rights First" className="hrf-img" />
