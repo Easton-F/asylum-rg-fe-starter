@@ -5,6 +5,11 @@ const LogoutButton = () => {
   const { logout } = useAuth0();
   return (
     <button
+      style={{
+        background: 'transparent',
+        border: 'none',
+        color: '#E2F0F7',
+      }}
       className="btn btn-danger btn-block"
       onClick={() =>
         logout({

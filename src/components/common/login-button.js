@@ -5,6 +5,11 @@ const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
   return (
     <button
+      style={{
+        background: 'transparent',
+        border: 'none',
+        color: '#E2F0F7',
+      }}
       className="btn btn-primary btn-block"
       onClick={() => loginWithRedirect()}
     >
